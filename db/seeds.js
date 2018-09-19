@@ -118,7 +118,7 @@ const blueChampion = new Team({
 })
 
 const blue = new Trainer({
-    imgUrl: 'https://i.imgur.com/cBJ6v09.png?1',
+    imgUrl: 'https://i.imgur.com/NX8ySBp.png',
     name: 'Blue',
     region: 'Kanto',
     hometown: 'Pallet Town',
@@ -126,7 +126,7 @@ const blue = new Trainer({
 })
 
 const red = new Trainer({
-    imgUrl: 'https://i.imgur.com/uPGYPss.png?1',
+    imgUrl: 'https://i.imgur.com/Q3q1I04.png',
     name: 'Red',
     region: 'Kanto',
     hometown: 'Pallet Town',
