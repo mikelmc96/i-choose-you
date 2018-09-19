@@ -10,4 +10,16 @@ router.get('/', function(req, res, next) {
   })
 })
 
+//New, Render Form
+
+
+//Show one
+
+router.get('/:id', (req, res) => {
+  Trainer.findById(req.params.id)
+  .then((trainer) => {
+    res.render('trainers/show', {trainer})
+  })
+})
+
 module.exports = router;
