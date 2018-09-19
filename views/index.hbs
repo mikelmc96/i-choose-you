@@ -2,7 +2,7 @@
 <p>Welcome to 'I Choose You'.</p>  
 <p>Start your adventure by siging up.</p> 
 <div>
-    <form>
+    <form action='/trainers/{{trainer._id}}' method='POST'>
   TrainerID:<br>
   <input type="text" name="name"><br>
   Region:<br>
@@ -14,4 +14,4 @@
   <input type="submit" value="Let's Go!">
 </form>
 </div>
-<p>Already have an account?  <a href=''>Log in</a></p>
+<p>Already have an account?  <a href='/trainers'>Log in</a></p>
