@@ -4,10 +4,11 @@
 <div>TrainerID: {{trainer.name}}</div>
 <div>Region: {{trainer.region}}</div>
 <div>Hometown: {{trainer.hometown}}</div>
+<div>Teams: {{trainer.teams}}</div>
 
 
-<form action='/users/{{trainer._id}}?_method=DELETE' method='POST'>
-    <input type='submit' value='Delete User'>
+<form action='/trainers/{{trainer._id}}?_method=DELETE' method='POST'>
+    <input type='submit' value='Delete Trainer'>
 </form>
-<a href='/trainers/{{trainer._id}}/edit'>Edit User</a>
-<a href='/trainers'>Go Back to Users</a>
+<a href='/trainers/{{trainer._id}}/edit'>Edit Trainer</a>
+<a href='/trainers'>Go Back to Trainers</a>

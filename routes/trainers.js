@@ -12,6 +12,9 @@ router.get('/', function(req, res, next) {
 
 //New, Render Form
 
+router.get('/new', (req, res) => {
+  res.render('trainers/new')
+})
 
 //Show one
 
@@ -19,6 +22,16 @@ router.get('/:id', (req, res) => {
   Trainer.findById(req.params.id)
   .then((trainer) => {
     res.render('trainers/show', {trainer})
+  })
+})
+
+
+//Create
+
+router.post('/', (req, res) => {
+  Trainer.create(req.body)
+  .then((trainer) => {
+    res.redirect(`/trainers/${trainer._id}`)
   })
 })
 
