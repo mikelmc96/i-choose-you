@@ -1,0 +1,7 @@
+<h1>All Trainers</h1> <a href='/trainers/new'>( new )</a>
+
+<div>
+    {{#each trainers}}
+        <div>TrainerID: {{this.name}} <a href='/users/{{this._id}}'>Go to Trainer</a></div>
+    {{/each}}
+</div>

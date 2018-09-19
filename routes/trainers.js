@@ -1,9 +1,13 @@
 var express = require('express');
 var router = express.Router();
+const {Trainer} = require('../db/schema') 
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+  Trainer.find()
+  .then((trainers) => {
+    res.render('trainers/index', {trainers})
+  })
+})
 
 module.exports = router;
