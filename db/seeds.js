@@ -126,7 +126,7 @@ const blue = new Trainer({
 })
 
 const red = new Trainer({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/PKGkxpT.png',
     name: 'Red',
     region: 'Kanto',
     hometown: 'Pallet Town',
