@@ -23,3 +23,13 @@ const TrainerSchema = new Schema({
     hometown: String,
     teams: [TeamSchema]
 })
+
+const PokemonModel = mongoose.model('Pokemon', PokemonSchema)
+const TeamModel = mongoose.model('Team', TeamSchema)
+const TrainerModel = mongoose.model('Trainer', TrainerSchema)
+
+module.exports = {
+    Pokemon: PokemonModel,
+    Team: TeamModel,
+    Trainer: TrainerModel
+}
