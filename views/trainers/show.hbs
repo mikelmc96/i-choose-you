@@ -1,14 +1,21 @@
-<h1>{{trainer.name}}</h1>
+<div class="badge">
+<div class="trainerImage"><img src="{{trainer.imgUrl}}"/></div>
+<div>
+    
+    <div class="trainerInfo">{{trainer.name}}</div>
+    <div class="age">{{trainer.age}}</div>
+    <div class="gender">{{trainer.gender}}</div>
+    <div class="hometown">{{trainer.hometown}}</div>
+    <div class="region">{{trainer.region}}</div>
+    <div class="team">Teams:</div>
+    
+</div>
 
-<div><img src="{{trainer.imgUrl}}"/></div>
-<div>TrainerID: {{trainer.name}}</div>
-<div>Region: {{trainer.region}}</div>
-<div>Hometown: {{trainer.hometown}}</div>
-<div>Teams: <a href=''><img src="https://i.imgur.com/VghaVcH.png?2"></a> <a href=''><img src="https://i.imgur.com/zz6kPL6.png?1"></a> <a href=''><img src="https://i.imgur.com/tTgU7Rw.png?1"></a> <a href=''><img src="https://i.imgur.com/DjNSMoX.png?1"></a></div>
-
-
+<div class="trainerForm"
 <form action='/trainers/{{trainer._id}}?_method=DELETE' method='POST'>
     <input type='submit' value='Delete Trainer'>
 </form>
 <a href='/trainers/{{trainer._id}}/edit'>Edit Trainer</a>
 <a href='/trainers'>Go Back to Trainers</a>
+</div>
+</div>

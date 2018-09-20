@@ -2,6 +2,6 @@
 
 <div>
     {{#each trainers}}
-        <div>TrainerID: {{this.name}} <a href='/trainers/{{this._id}}'>Go to Trainer</a></div>
+        <a href='/trainers/{{this._id}}'><img src="{{this.imgUrl}}"></a>
     {{/each}}
 </div>

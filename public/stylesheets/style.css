@@ -1,8 +1,90 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('https://i.imgur.com/ZzJFkzk.jpg');
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
+}
+
+.signUp {
+  background-color: grey;
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  border-radius: 3%;
+  padding: 10px;
+}
+
+.trainerImage {
+  float: left;
+}
+
+.trainerInfo {
+  position: absolute;
+  top: 205px;
+  right: 295px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.age {
+  position: absolute;
+  top: 275px;
+  right: 295px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.gender {
+  position: absolute;
+  top: 315px;
+  right: 295px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.hometown {
+  position: absolute;
+  top: 358px;
+  right: 295px;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.region {
+  position: absolute;
+  top: 390px;
+  right: 295px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.team {
+  position: absolute;
+  top: 550px;
+  right: 480px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.badge {
+  position: absolute;
+  background-image: url('https://i.imgur.com/yXtuzlP.jpg');
+  height: 600px;
+  width: 920px;
 }

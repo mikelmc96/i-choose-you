@@ -120,6 +120,8 @@ const blueChampion = new Team({
 const blue = new Trainer({
     imgUrl: 'https://i.imgur.com/NX8ySBp.png',
     name: 'Blue',
+    age: 11,
+    gender: 'M',
     region: 'Kanto',
     hometown: 'Pallet Town',
     teams: [blueChampion]
@@ -128,6 +130,8 @@ const blue = new Trainer({
 const red = new Trainer({
     imgUrl: 'https://i.imgur.com/Q3q1I04.png',
     name: 'Red',
+    age: 11,
+    gender: 'M',
     region: 'Kanto',
     hometown: 'Pallet Town',
     teams: [redChampion]
