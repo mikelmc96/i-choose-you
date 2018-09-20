@@ -25,11 +25,29 @@ router.get('/:id', (req, res) => {
   })
 })
 
+//Edit
+
+router.get('/:id/edit', (req, res) => {
+  Trainer.findById(req.params.id)
+  .then((trainer) => {
+    res.render('trainers/edit', { trainer })
+  })
+})
+
 
 //Create
 
 router.post('/', (req, res) => {
   Trainer.create(req.body)
+  .then((trainer) => {
+    res.redirect(`/trainers/${trainer._id}`)
+  })
+})
+
+//Update
+
+router.put('/:id', (req, res) => {
+  Trainer.findByIdAndUpdate(req.params.id, req.body)
   .then((trainer) => {
     res.redirect(`/trainers/${trainer._id}`)
   })

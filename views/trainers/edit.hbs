@@ -1,0 +1,11 @@
+<h1>Edit User</h1>
+
+<form action='/trainers/{{trainer._id}}?_method=PUT' method='POST'>
+    <div>TrainerID:<input type='text' name='name' value='{{trainer.name}}'></div>
+    <div>Region:<input type='text' name='region' value='{{trainer.region}}'></div>
+       <div>Hometown:<input type='text' name='hometown' value='{{trainer.hometown}}'></div>
+    <div>Age:<input type='text' name='age' value='{{trainer.age}}'></div>
+       <div>Gender:<input type='text' name='gender' value='{{trainer.gender}}'></div>
+    <div>ImgUrl:<input type='text' name='imgUrl' value='{{trainer.imgUrl}}'></div>
+    <div><input type='submit' value='Update Trainer'></div>
+</form>

@@ -9,7 +9,7 @@ a {
   color: #00B7FF;
 }
 
-.signUp {
+.createForm {
   background-color: grey;
   margin: auto;
   width: 50%;
@@ -44,7 +44,7 @@ a {
 
 .gender {
   position: absolute;
-  top: 315px;
+  top: 318px;
   right: 295px;
   text-align: center;
   font-size: 25px;
@@ -72,10 +72,70 @@ a {
   margin-left: 50px;
 }
 
-.team {
+.championTeam {
   position: absolute;
-  top: 550px;
-  right: 480px;
+  top: 420px;
+  right: 295px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.slotOne {
+  position: absolute;
+  top: 207px;
+  right: 146px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.slotTwo {
+  position: absolute;
+  top: 207px;
+  right: 16px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.slotThree {
+  position: absolute;
+  top: 333px;
+  right: 146px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.slotFour {
+  position: absolute;
+  top: 333px;
+  right: 16px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.slotFive {
+  position: absolute;
+  top: 457px;
+  right: 146px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+}
+
+.slotSix {
+  position: absolute;
+  top: 457px;
+  right: 16px;
   text-align: center;
   font-size: 35px;
   color: rgb(255, 255, 255);
