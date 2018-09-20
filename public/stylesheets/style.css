@@ -78,12 +78,14 @@ a {
 
 .championTeam {
   position: absolute;
-  top: 420px;
-  right: 295px;
-  text-align: center;
-  font-size: 35px;
-  color: rgb(255, 255, 255);
-  margin-left: 50px;
+  top: 628px;
+  right: 465px;
+}
+
+.trainerForm {
+  position: absolute;
+  top: 660px;
+  right: 525px;
 }
 
 .slotOne {

@@ -117,6 +117,13 @@ const blueChampion = new Team({
     pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados]
 })
 
+const blueJohto = new Team({
+    imgUrl: 'https://i.imgur.com/ZM3u72x.png',
+    name: "Blue's Johto Team",
+    style: 'Offensive',
+    pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados]
+})
+
 const blue = new Trainer({
     imgUrl: 'https://i.imgur.com/NX8ySBp.png',
     imgPoke: 'https://i.imgur.com/scXpXqu.png?1',
@@ -125,7 +132,7 @@ const blue = new Trainer({
     gender: 'M',
     region: 'Kanto',
     hometown: 'Pallet Town',
-    teams: [blueChampion]
+    teams: [blueChampion, blueJohto]
 })
 
 const red = new Trainer({

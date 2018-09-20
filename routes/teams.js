@@ -3,6 +3,7 @@ var router = express.Router({mergeParams: true});
 const { Trainer } = require('../db/schema')
 const { Team } = require('../db/schema')
 
+
 //Show All
 
 router.get('/', (req, res) => {
@@ -26,10 +27,9 @@ router.get('/new', (req, res) => {
 router.get('/:id', (req, res) => {
     Trainer.findById(req.params.trainerId)
     .then((trainer) => {
-        res.render('teams/show', {
-            trainerId: req.params.trainerId,
-            team: trainer.teams.id(req.params.id)
-        })
+        const team = trainer.team
+        const pokemon = trainer.teams.pokemon
+        res.render('teams/show', {trainer, pokemon, team})
     })
 })
 
