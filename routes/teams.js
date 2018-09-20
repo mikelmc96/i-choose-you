@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router({mergeParams: true});
-const { Trainer } = require('../db/schema')
-const { Team } = require('../db/schema')
+const { Trainer, Team } = require('../db/schema')
+
 
 
 //Show All
@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 //New Team form
 
 router.get('/new', (req, res) => {
-    res.render('teams/new')
+    res.render('teams/new', {trainerId: req.params.trainerId})
   })
 
 //Show One
@@ -36,14 +36,17 @@ router.get('/:id', (req, res) => {
 
 //Create
 
-router.post('/', (req, res) => {
-    Team.create(req.body)
-    .then((team) => {
-      res.redirect(`/trainers/${trainer._id}/teams/${team._id}`)
+  router.post('/', (req, res) => {
+    const newTeam = new Team(req.body)
+    Trainer.findById(req.params.trainerId)
+        .then((trainer) => {
+            trainer.teams.push(newTeam)
+            return trainer.save()
+        })
+        .then((trainer) => {
+            res.redirect(`/trainers/${req.params.trainerId}/teams`)
+        })
     })
-  })
-
-
 
 
 
