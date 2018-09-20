@@ -18,6 +18,7 @@ const TeamSchema = new Schema({
 
 const TrainerSchema = new Schema({
     imgUrl: String,
+    imgPoke: String,
     name: String,
     age: Number,
     gender: String,

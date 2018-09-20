@@ -56,7 +56,7 @@ const pikachu = new Pokemon({
 })
 
 const alakazam = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/P5HYj82.png',
     name: 'Alakazam',
     dexNumber: 65,
     type: 'Psychic',
@@ -64,7 +64,7 @@ const alakazam = new Pokemon({
 })
 
 const rhydon = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/Mj31Z4J.png',
     name: 'Rhydon',
     dexNumber: 112,
     type: 'Rock/Ground',
@@ -72,7 +72,7 @@ const rhydon = new Pokemon({
 })
 
 const exeggutor = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/J1lrehw.png',
     name: 'Exeggutor',
     dexNumber: 103,
     type: 'Grass/Psychic',
@@ -80,7 +80,7 @@ const exeggutor = new Pokemon({
 })
 
 const arcanine = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/Qe77Y54.png',
     name: 'Arcanine',
     dexNumber: 59,
     type: 'Fire',
@@ -88,7 +88,7 @@ const arcanine = new Pokemon({
 })
 
 const cloyster = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/x0KQ8Fw.png',
     name: 'Cloyster',
     dexNumber: 91,
     type: 'Ice/Water',
@@ -96,7 +96,7 @@ const cloyster = new Pokemon({
 })
 
 const gyarados = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/lyixJyn.png',
     name: 'Gyarados',
     dexNumber: 130,
     type: 'Flying/Water',
@@ -119,6 +119,7 @@ const blueChampion = new Team({
 
 const blue = new Trainer({
     imgUrl: 'https://i.imgur.com/NX8ySBp.png',
+    imgPoke: 'https://i.imgur.com/scXpXqu.png?1',
     name: 'Blue',
     age: 11,
     gender: 'M',
@@ -129,6 +130,7 @@ const blue = new Trainer({
 
 const red = new Trainer({
     imgUrl: 'https://i.imgur.com/Q3q1I04.png',
+    imgPoke: 'https://i.imgur.com/scXpXqu.png?1',
     name: 'Red',
     age: 11,
     gender: 'M',
