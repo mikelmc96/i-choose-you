@@ -198,7 +198,19 @@ a {
 }
 
 .pokemonRowBackdrop {
+  background-color: rgb(18, 180, 238);
   position: absolute;
   top: 145px;
   left: 248px;
+}
+
+.teamIcon {
+  height: 225px;
+  position: absolute;
+  top: 250px;
+  left: 252px;
+}
+
+.crown {
+  height: 25px;
 }
