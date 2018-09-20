@@ -104,14 +104,14 @@ const gyarados = new Pokemon({
 })
 
 const redChampion = new Team({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
     name: "Red's Champion Team",
     style: 'Balanced',
     pokemon: [pikachu, charizard, blastoise, venusaur, snorlax, pidgeot]
 })
 
 const blueChampion = new Team({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
     name: "Blue's Champion Team",
     style: 'Offensive',
     pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados]
