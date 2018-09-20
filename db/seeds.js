@@ -126,7 +126,7 @@ const crobat = new Pokemon({
 })
 
 const ursaring = new Pokemon({
-    imgUrl: 'https://i.imgur.com/J1lrehw.png',
+    imgUrl: 'https://i.imgur.com/rftWUxb.png',
     name: 'Ursaring',
     dexNumber: 217,
     type: 'Normal',
