@@ -8,7 +8,7 @@ const Schema = require('./schema')
 const { Trainer, Team, Pokemon } = Schema
 
 const pidgeot = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/ITzVZgV.png',
     name: 'Pidgeot',
     dexNumber: 18,
     type: 'Flying/Normal',
@@ -16,7 +16,7 @@ const pidgeot = new Pokemon({
 })
 
 const snorlax = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/0aiDvOs.png',
     name: 'Snorlax',
     dexNumber: 143,
     type: 'Normal',
@@ -24,7 +24,7 @@ const snorlax = new Pokemon({
 })
 
 const venusaur = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/1ZIw9mi.png',
     name: 'Venusaur',
     dexNumber: 3,
     type: 'Grass/Poison',
@@ -32,7 +32,7 @@ const venusaur = new Pokemon({
 })
 
 const blastoise = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/5BoaYHt.png',
     name: 'Blastoise',
     dexNumber: 9,
     type: 'Water',
@@ -40,7 +40,7 @@ const blastoise = new Pokemon({
 })
 
 const charizard = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/kfweKEE.png',
     name: 'Charizard',
     dexNumber: 6,
     type: 'Fire/Flying',
@@ -48,7 +48,7 @@ const charizard = new Pokemon({
 })
 
 const pikachu = new Pokemon({
-    imgUrl: '',
+    imgUrl: 'https://i.imgur.com/tMy078S.png',
     name: 'Pikachu',
     dexNumber: 25,
     type: 'Electric',

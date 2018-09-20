@@ -12,6 +12,7 @@ mongoose.connect(process.env.MONGODB_URI), { useNewUrlParser: true };
 var indexRouter = require('./routes');
 var trainersRouter = require('./routes/trainers');
 var teamsRouter = require('./routes/teams');
+var pokemonRouter = require('./routes/pokemon');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/trainers', trainersRouter);
 app.use('/trainers/:trainerId/teams', teamsRouter)
+app.use('/trainers/:trainerId/teams/:teamId/pokemon', pokemonRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
