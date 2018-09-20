@@ -37,6 +37,7 @@ router.get('/:id', (req, res) => {
 //Create
 
   router.post('/', (req, res) => {
+    const name = req.body.name
     const newTeam = new Team(req.body)
     Trainer.findById(req.params.trainerId)
         .then((trainer) => {
@@ -44,7 +45,9 @@ router.get('/:id', (req, res) => {
             return trainer.save()
         })
         .then((trainer) => {
-            res.redirect(`/trainers/${req.params.trainerId}/teams`)
+            console.log(trainer)
+            const team = trainer.teams.find(team => team.name === name)
+            res.redirect(`/trainers/${req.params.trainerId}/teams/${team._id}`)
         })
     })
 
@@ -53,4 +56,4 @@ router.get('/:id', (req, res) => {
 
 
 
-module.exports = router
+module.exports = router;
