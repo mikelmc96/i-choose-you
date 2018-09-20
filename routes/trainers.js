@@ -53,4 +53,13 @@ router.put('/:id', (req, res) => {
   })
 })
 
+//Delete
+
+router.delete('/:id', (req, res) => {
+  Trainer.findByIdAndRemove(req.params.id)
+  .then(() => {
+    res.redirect('/trainers')
+  })
+})
+
 module.exports = router;
