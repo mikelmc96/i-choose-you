@@ -10,7 +10,8 @@ a {
 }
 
 .createForm {
-  background-color: grey;
+  background-color: #1a1a1a;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
   margin: auto;
   width: 50%;
   border: 3px solid white;
