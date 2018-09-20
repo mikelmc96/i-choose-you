@@ -1,7 +1,7 @@
 <h1>All Pokemon</h1> <a href='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/new'>( new )</a>
 
-<div>
+<div class= "pokemonRow">
     {{#each pokemon}}
-        <div><img class="pokemonPics" src="{{this.imgUrl}}"><a href='/trainers/{{../trainerId}}/teams/{{../teamId}}/pokemon/{{this._id}}'>Go to Pokemon</a></div>
+        <a href='/trainers/{{../trainerId}}/teams/{{../teamId}}/pokemon/{{this._id}}'><img class="pokemonPics" src="{{this.imgUrl}}"></a>
     {{/each}}
 </div>
