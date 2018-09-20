@@ -27,8 +27,9 @@ router.get('/new', (req, res) => {
 router.get('/:id', (req, res) => {
     Trainer.findById(req.params.trainerId)
     .then((trainer) => {
-        const team = trainer.team
-        const pokemon = trainer.teams.pokemon
+        const teams = trainer.teams
+        const team = teams.id(req.params.id)
+        const pokemon = team.pokemon
         res.render('teams/show', {trainer, pokemon, team})
     })
 })

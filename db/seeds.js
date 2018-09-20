@@ -7,6 +7,8 @@ const Schema = require('./schema')
 
 const { Trainer, Team, Pokemon } = Schema
 
+//Red's Kanto Pokemon
+
 const pidgeot = new Pokemon({
     imgUrl: 'https://i.imgur.com/ITzVZgV.png',
     name: 'Pidgeot',
@@ -54,6 +56,8 @@ const pikachu = new Pokemon({
     type: 'Electric',
     moves: 'Thunder/Slam/Agility/Charge'
 })
+
+//Blue's Kanto Pokemon
 
 const alakazam = new Pokemon({
     imgUrl: 'https://i.imgur.com/P5HYj82.png',
@@ -103,6 +107,56 @@ const gyarados = new Pokemon({
     moves: 'Surf/Thrash/Hyper Beam/Crunch'
 })
 
+//Blue's johto Pokemon
+
+const sneasel = new Pokemon({
+    imgUrl: 'https://i.imgur.com/zMBlUYU.png',
+    name: 'Sneasel',
+    dexNumber: 215,
+    type: 'Dark/Ice',
+    moves: 'Icecicle Crash/Haze/Shadow Pulse/Thief'
+})
+
+const crobat = new Pokemon({
+    imgUrl: 'https://i.imgur.com/H81fTim.png',
+    name: 'Crobat',
+    dexNumber: 169,
+    type: 'Poison/Flying',
+    moves: 'Aerial Ace/Toxic/Crunch/Sludge Bomb'
+})
+
+const ursaring = new Pokemon({
+    imgUrl: 'https://i.imgur.com/J1lrehw.png',
+    name: 'Ursaring',
+    dexNumber: 217,
+    type: 'Normal',
+    moves: 'Body Slam/Rest/Hammer Arm/Strength'
+})
+
+const misdreavus = new Pokemon({
+    imgUrl: 'https://i.imgur.com/DSKNc6L.png',
+    name: 'Misdreavus',
+    dexNumber: 200,
+    type: 'Ghost',
+    moves: 'Spite/Curse/Shadow Ball/Payback'
+})
+
+const scizor = new Pokemon({
+    imgUrl: 'https://i.imgur.com/r47jO3d.png',
+    name: 'Scizor',
+    dexNumber: 212,
+    type: 'Steel/Bug',
+    moves: 'Megahorn/Steel Claw/Aerial Ace/Steel Defense'
+})
+
+const magcargo = new Pokemon({
+    imgUrl: 'https://i.imgur.com/kVYhutH.png',
+    name: 'Magcargo',
+    dexNumber: 219,
+    type: 'Fire/Rock',
+    moves: 'Stone Edge/Fire Blast/Overheat/Sunny Day'
+})
+
 const redChampion = new Team({
     imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
     name: "Red's Champion Team",
@@ -121,7 +175,7 @@ const blueJohto = new Team({
     imgUrl: 'https://i.imgur.com/ZM3u72x.png',
     name: "Blue's Johto Team",
     style: 'Offensive',
-    pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados]
+    pokemon: [sneasel, crobat, ursaring, misdreavus, scizor, magcargo]
 })
 
 const blue = new Trainer({

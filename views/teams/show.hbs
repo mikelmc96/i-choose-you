@@ -1,16 +1,15 @@
 <div class="pokemonRowBackdrop"><img src='https://i.imgur.com/R6458d9.png'/></div>
-<div><img class="teamIcon" src="https://i.imgur.com/yUbhiZs.png?1"></div>
+<div><img class="teamIcon" src="{{team.imgUrl}}"></div>
 
 <div class= "pokemonRow">
     {{#each pokemon}}
-        <a href='/trainers/{{../../trainer._id}}/teams/{{../team._id}}/pokemon/{{_id}}'><img class="pokemonPics" src="{{imgUrl}}"></a>
+        <a href='/trainers/{{../trainer._id}}/teams/{{../team._id}}/pokemon/{{_id}}'><img class="pokemonPics" src="{{imgUrl}}"></a>
     {{/each}}
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <h1>{{team.name}}</h1>
-<div><img src="{{team.imgUrl}}"></div>
 <div>Name: {{team.name}}</div>
 <div>Style: {{team.style}}</div>
 
