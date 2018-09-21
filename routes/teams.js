@@ -40,6 +40,18 @@ router.get('/:id', (req, res) => {
         })
 })
 
+//Edit
+
+router.get('/:teamId/edit', (req, res) => {
+    Trainer.findById(req.params.trainerId)
+    .then((trainer) => {
+    
+        const team = trainer.teams.id(req.params.teamId)
+      res.render('teams/edit', {trainer,team })
+    })
+  })
+
+
 //Create
 
 router.post('/', (req, res) => {
@@ -56,6 +68,22 @@ router.post('/', (req, res) => {
             res.redirect(`/trainers/${req.params.trainerId}/teams/${team._id}`)
         })
 })
+
+//Update
+
+router.put('/:teamId', (req, res) => {
+    Trainer.findById(req.params.trainerId)
+    .then((trainer) => {
+            const newTeam = trainer.teams.id(req.params.teamId)
+            newTeam.name = req.body.name
+            newTeam.style = req.body.style
+            newTeam.imageUrl = req.body.imageUrl
+            return trainer.save()
+        })
+    .then((trainer) => {
+      res.redirect(`/trainers/${req.params.trainerId}/teams/${req.params.teamId}`)
+    })
+  })
 
 
 //Delete
