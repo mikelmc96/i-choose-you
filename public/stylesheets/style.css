@@ -289,3 +289,22 @@ a {
   top: 155px;
   right: 505px;
 }
+
+.dexType {
+  position: absolute;
+  top: 520px;
+  left: 500px;
+}
+
+.dexMoves {
+  text-align: left;
+  position: absolute;
+  top: 520px;
+  left: 620px;
+}
+
+.dexNavigate {
+  position: absolute;
+  top: 680px;
+  left: 520px;
+}

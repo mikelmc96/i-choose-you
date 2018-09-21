@@ -6,7 +6,10 @@ const PokemonSchema = new Schema({
     name: String,
     dexNumber: Number,
     type: String,
-    moves: String,
+    moveOne: String,
+    moveTwo: String,
+    moveThree: String,
+    moveFour: String,
 })
 
 const TeamSchema = new Schema({
