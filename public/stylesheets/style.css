@@ -158,13 +158,15 @@ a {
 }
 
 .pokemonPics {
-  height: 150px;
+  height: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pokemonRow {
   position: absolute;
-  top: 205px;
-  left: 485px;
+  top: 225px;
+  left: 490px;
   max-width: 500px;
 }
 
@@ -227,4 +229,50 @@ a {
 
 .crown {
   height: 25px;
+}
+
+.teamName {
+  position: absolute;
+  top: 170px;
+  left: 720px;
+}
+
+.teamStyle {
+  position: absolute;
+  top: 465px;
+  left: 280px;
+  color: white;
+}
+
+.teamDelete {
+  position: absolute;
+  top: 602px;
+  left: 300px;
+}
+
+.teamNavigate {
+  position: absolute;
+  top: 602px;
+  left: 400px;
+  color: white;
+}
+
+.teamEdit {
+  position: absolute;
+  top: 602px;
+  left: 540px;
+  color: white;
+}
+
+.trainerEdit {
+  position: absolute;
+  top: 5px;
+  left: 390px;
+}
+
+.smeargle {
+  position: absolute;
+  top: 10px;
+  right: 450px;
+  height: 300px;
 }

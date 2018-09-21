@@ -159,23 +159,23 @@ const magcargo = new Pokemon({
 
 const redChampion = new Team({
     imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
-    name: "Red's Champion Team",
+    name: "Champion",
     style: 'Balanced',
-    pokemon: [pikachu, charizard, blastoise, venusaur, snorlax, pidgeot]
+    pokemon: [pikachu, charizard, blastoise, venusaur, snorlax, pidgeot],
 })
 
 const blueChampion = new Team({
     imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
-    name: "Blue's Champion Team",
+    name: "Champion",
     style: 'Offensive',
-    pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados]
+    pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados],
 })
 
 const blueJohto = new Team({
     imgUrl: 'https://i.imgur.com/ZM3u72x.png',
-    name: "Blue's Johto Team",
+    name: "Johto Team",
     style: 'Offensive',
-    pokemon: [sneasel, crobat, ursaring, misdreavus, scizor, magcargo]
+    pokemon: [sneasel, crobat, ursaring, misdreavus, scizor, magcargo],
 })
 
 const blue = new Trainer({

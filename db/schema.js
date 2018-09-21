@@ -13,7 +13,7 @@ const TeamSchema = new Schema({
     imgUrl: String,
     name: String,
     style: String,
-    pokemon: [PokemonSchema]
+    pokemon: [PokemonSchema],
 })
 
 const TrainerSchema = new Schema({
