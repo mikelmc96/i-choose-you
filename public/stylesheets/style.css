@@ -282,3 +282,10 @@ a {
   text-decoration: none;
   font-size: 20px;
 }
+
+.dexMon {
+  height: 250px;
+  position: absolute;
+  top: 155px;
+  right: 505px;
+}

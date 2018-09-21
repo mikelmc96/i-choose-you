@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
         res.render('pokemon/show', {
             trainerId: req.params.trainerId,
             teamId: req.params.teamId,
-            pokemon: trainer.teams.id(req.params.id)
+            pokemon: trainer.teams.id(req.params.teamId).pokemon.id(req.params.id)
         })
     })
 })

@@ -1,8 +1,12 @@
-<br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 <h1>{{pokemon.name}}</h1>
 
-<div><img src="{{pokemon.imgUrl}}"></div>
+<img src='https://i.imgur.com/GdSQK1g.png'/>
+
+
+
+<div><img class="dexMon" src="{{pokemon.imgUrl}}"></div>
 <div>Type: {{pokemon.type}}</div>
 <div>Moves: {{pokemon.moves}}</div>
 
@@ -10,4 +14,4 @@
     <input type='submit' value='Delete Pokemon'>
 </form>
 <a href='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/{{pokemon._id}}edit'>Edit Pokemon</a>
-<a href='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon'>Go Back to Pokemon</a>
+<a href='/trainers/{{trainerId}}/teams/{{teamId}}'>Go Back to Pokemon</a>
