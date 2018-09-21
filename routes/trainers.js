@@ -16,6 +16,10 @@ router.get('/new', (req, res) => {
   res.render('trainers/new')
 })
 
+router.get('/avatars', (req, res) => {
+  res.render('trainers/avatars')
+})
+
 //Show one
 
 router.get('/:id', (req, res) => {
