@@ -68,7 +68,7 @@ router.delete('/:id', (req, res) => {
             return trainer.save()
         })
         .then(() => {
-            res.redirect(`/trainers/${req.params.trainerId}/teams`)
+            res.redirect(`/trainers/${req.params.trainerId}`)
         })
 })
 

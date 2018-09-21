@@ -85,7 +85,7 @@ a {
 .trainerForm {
   position: absolute;
   top: 670px;
-  right: 625px;
+  right: 485px;
 }
 
 .slotOne {
@@ -260,14 +260,14 @@ a {
 .teamNavigate {
   position: absolute;
   top: 602px;
-  left: 450px;
+  left: 443px;
   color: white;
 }
 
 .teamEdit {
   position: absolute;
   top: 602px;
-  left: 590px;
+  left: 538px;
   color: white;
 }
 
@@ -314,4 +314,17 @@ a {
   position: absolute;
   top: 680px;
   left: 520px;
+}
+
+.trainerButton {
+  width: 80px;
+}
+
+.rubyDialogue {
+  position: absolute;
+  top: -25px;
+  left: -200px;
+  background: rgb(255, 255, 255);
+  max-width: 250px;
+  border-radius: 25px;
 }
