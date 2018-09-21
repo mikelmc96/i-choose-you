@@ -52,6 +52,19 @@ router.get('/:id', (req, res) => {
     })
 
 
+//Delete
+
+router.delete('/:id', (req, res) => {
+    Trainer.findById(req.params.trainerId)
+    .then((trainer) => {
+        const deleteTeam = trainer.teams.id(req.params.id)
+        deleteTeam.remove()
+        return trainer.save()
+    })
+    .then(() => {
+      res.redirect(`/trainers/${req.params.trainerId}/teams`)
+    })
+  })
 
 
 

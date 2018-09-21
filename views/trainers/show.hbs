@@ -30,9 +30,10 @@
 </div>
 
 <div class="trainerForm">
+<a class="trainerLinks" href='/trainers/{{trainer._id}}/teams/new'><button>Add Team</button></a><br>
+<a class="trainerLinks" href='/trainers/{{trainer._id}}/edit'><button>Edit Trainer</button></a>
+<a class="trainerLinks" href='/trainers'><button>All Trainers</button></a><br>
 <form action='/trainers/{{trainer._id}}?_method=DELETE' method='POST'>
     <input type='submit' value='Delete Trainer'>
 </form>
-<a href='/trainers/{{trainer._id}}/edit'>Edit Trainer</a>
-<a href='/trainers'>Go Back to Trainers</a>
 </div>

@@ -84,8 +84,8 @@ a {
 
 .trainerForm {
   position: absolute;
-  top: 660px;
-  right: 525px;
+  top: 670px;
+  right: 625px;
 }
 
 .slotOne {
@@ -275,4 +275,10 @@ a {
   top: 10px;
   right: 450px;
   height: 300px;
+}
+
+.trainerLinks {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
