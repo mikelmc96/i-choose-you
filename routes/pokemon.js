@@ -54,6 +54,20 @@ router.post('/', (req, res) => {
         })
 })
 
+//delete
+
+router.delete('/:id', (req, res) => {
+    Trainer.findById(req.params.trainerId)
+        .then((trainer) => {
+            const team = trainer.teams.id(req.params.teamId)
+            const deletePokemon = team.pokemon.id(req.params.id)
+            deletePokemon.remove()
+            return trainer.save()
+        .then(() => {
+            res.redirect(`/trainers/${trainer._id}/teams/${team._id}`)
+        })
+    })
+})
 
 
 
