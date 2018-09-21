@@ -218,6 +218,7 @@ a {
   position: absolute;
   top: 145px;
   left: 248px;
+  border-radius: 25px;
 }
 
 .teamIcon {
@@ -244,23 +245,29 @@ a {
   color: white;
 }
 
+.pokemonNew {
+  position: absolute;
+  top: 602px;
+  left: 270px;
+}
+
 .teamDelete {
   position: absolute;
   top: 602px;
-  left: 300px;
+  left: 360px;
 }
 
 .teamNavigate {
   position: absolute;
   top: 602px;
-  left: 400px;
+  left: 450px;
   color: white;
 }
 
 .teamEdit {
   position: absolute;
   top: 602px;
-  left: 540px;
+  left: 590px;
   color: white;
 }
 

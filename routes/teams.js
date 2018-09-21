@@ -1,11 +1,6 @@
 var express = require('express');
-var router = express.Router({
-    mergeParams: true
-});
-const {
-    Trainer,
-    Team
-} = require('../db/schema')
+var router = express.Router({mergeParams: true});
+const {Trainer, Team} = require('../db/schema')
 
 
 

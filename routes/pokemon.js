@@ -17,6 +17,14 @@ router.get('/', (req, res) => {
     })
 })
 
+//New Pokemon form
+
+router.get('/new', (req, res) => {
+    res.render('pokemon/new', {
+        teamId: req.params.teamId
+    })
+})
+
 //Show One
 
 router.get('/:id', (req, res) => {
