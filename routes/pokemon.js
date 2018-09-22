@@ -26,6 +26,13 @@ router.get('/new', (req, res) => {
     })
 })
 
+router.get('/avatars', (req, res) => {
+    res.render('pokemon/avatars', {
+        trainerId: req.params.trainerId,
+        teamId: req.params.teamId
+    })
+  })
+
 //Show One
 
 router.get('/:id', (req, res) => {

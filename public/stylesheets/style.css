@@ -195,7 +195,8 @@ a {
 .logo {
   position: absolute;
   bottom: 560px;
-  right: 250px;
+  right: 350px;
+  width: 600px;
 }
 
 .dragonite {
@@ -338,6 +339,8 @@ a {
 }
 
 .avatarsForm {
+  display: flex;
+  justify-content: center;
   border-radius: 25px;
   padding: 25px;
   margin-top: 150px;
@@ -347,4 +350,48 @@ a {
 
 .avatarsPic {
   height: 300px;
+}
+
+.pokeName {
+  position: absolute;
+  top: 630px;
+  left: 560px;
+}
+
+.pokedex {
+  position: absolute;
+  top: 140px;
+  right: 180px;
+}
+
+.pikachu {
+  position: absolute;
+  top: 500px;
+  right: 350px;
+  height: 200px;
+}
+
+.pikachuBubble {
+  position: absolute;
+  top: 310px;
+  right: 135px;
+  width: 260px;
+}
+
+.pikachuDialogue {
+  position: absolute;
+  top: 360px;
+  right: 160px;
+  max-width: 220px;
+}
+
+.starters {
+  position: absolute;
+  top: 530px;
+  left: 175px;
+  height: 180px;
+}
+
+.silverAvatar {
+  padding-right: 10px;
 }

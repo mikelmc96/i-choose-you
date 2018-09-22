@@ -7,6 +7,25 @@ const Schema = require('./schema')
 
 const { Trainer, Team, Pokemon } = Schema
 
+//Trying to build a class with Constructor for Pokemon
+
+// class newPokemon {
+//     constructor(imgUrl, name, dexNumber, type, moveOne, moveTwo, moveThree, moveFour) {
+//         this.imgUrl = this.imgUrl
+//         this.name = this.name
+//         this.dexNumber = this.dexNumber
+//         this.type = this.type
+//         this.moveOne = this.moveOne
+//         this.moveTwo = this.moveTwo
+//         this.moveThree = this.moveThree
+//         this.moveFour = this.moveFour
+//     } 
+// }
+
+// const raichu = new newPokemon('https://i.imgur.com/OF31bIR.png', 'Raichu', 26, 'https://i.imgur.com/pZtQPZG.png?1', 'Thunder', 'Body Slam', 'Volt Tackle', 'Charge')
+
+
+
 //Red's Kanto Pokemon
 
 const pidgeot = new Pokemon({
@@ -215,21 +234,21 @@ const redChampion = new Team({
     imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
     name: "Champion",
     style: 'Balanced',
-    pokemon: [pikachu, charizard, blastoise, venusaur, snorlax, pidgeot],
+    pokemon: [pikachu, charizard, blastoise, venusaur, snorlax, pidgeot]
 })
 
 const blueChampion = new Team({
     imgUrl: 'https://i.imgur.com/yUbhiZs.png?1',
     name: "Champion",
     style: 'Offensive',
-    pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados],
+    pokemon: [alakazam, rhydon, exeggutor, arcanine, cloyster, gyarados]
 })
 
 const blueJohto = new Team({
     imgUrl: 'https://i.imgur.com/ZM3u72x.png',
     name: "Johto Team",
     style: 'Offensive',
-    pokemon: [sneasel, crobat, ursaring, misdreavus, scizor, magcargo],
+    pokemon: [sneasel, crobat, ursaring, misdreavus, scizor, magcargo]
 })
 
 const blue = new Trainer({
