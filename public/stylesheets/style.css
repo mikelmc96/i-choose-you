@@ -633,7 +633,7 @@ a {
   width: 500px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 
   body {
     background-size: 400px;
