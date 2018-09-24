@@ -281,7 +281,7 @@ a {
 .trainerEdit {
   position: absolute;
   top: 5px;
-  left: 390px;
+  left: 450px;
 }
 
 .smeargle {
@@ -403,22 +403,11 @@ a {
 }
 
 .trainers {
-  /* background-color: rgb(47, 206, 204);
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-  text-align: center;
-  padding: 10px;
-  border: 3px solid white;
-  height: 100vh; */
   margin-top: 50px;
   text-align: center;
 }
 
 .allTrainers {
-  /* margin-top: 100px;
-  background-color: #1a1a1a;
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
-  border: 3px solid white;
-  padding: 10px; */
   position: absolute;
   top: 200px;
   left: 180px;

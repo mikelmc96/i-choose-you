@@ -1,39 +1,29 @@
 <div class="badge">
-<div class="trainerImage"><img src="{{trainer.imgUrl}}"/></div>
-<div>
-    
-    <div class="trainerInfo">{{trainer.name}}</div>
-    <div class="age">{{trainer.age}}</div>
-    <div class="gender">{{trainer.gender}}</div>
-    <div class="hometown">{{trainer.hometown}}</div>
-    <div class="region">{{trainer.region}}</div>
-
-
-    <div class="slotOne"><img src="{{trainer.imgPoke}}"></div>
-    <div class="slotTwo"><img src="{{trainer.imgPoke}}"></div>
-    <div class="slotThree"><img src="{{trainer.imgPoke}}"></div>
-    <div class="slotFour"><img src="{{trainer.imgPoke}}"></div>
-    <div class="slotFive"><img src="{{trainer.imgPoke}}"></div>
-    <div class="slotSix"><img src="{{trainer.imgPoke}}"></div>
-    
+    <div class="trainerImage"><img src="{{trainer.imgUrl}}" /></div>
+    <div>
+        <div class="trainerInfo">{{trainer.name}}</div>
+        <div class="age">{{trainer.age}}</div>
+        <div class="gender">{{trainer.gender}}</div>
+        <div class="hometown">{{trainer.hometown}}</div>
+        <div class="region">{{trainer.region}}</div>
+        <div class="slotOne"><img src="{{trainer.imgPoke}}"></div>
+        <div class="slotTwo"><img src="{{trainer.imgPoke}}"></div>
+        <div class="slotThree"><img src="{{trainer.imgPoke}}"></div>
+        <div class="slotFour"><img src="{{trainer.imgPoke}}"></div>
+        <div class="slotFive"><img src="{{trainer.imgPoke}}"></div>
+        <div class="slotSix"><img src="{{trainer.imgPoke}}"></div>
+    </div>
 </div>
-
-</div>
-
 <div class="championTeam">
-
- {{#each teams}}
-    
+    {{#each teams}}
     <a href="/trainers/{{../trainer._id}}/teams/{{_id}}"><img class="crown" src="{{imgUrl}}"></a>
-    
     {{/each}}
 </div>
-
 <div class="trainerForm">
-<a class="trainerLinks" href='/trainers/{{trainer._id}}/teams/new'><button class="trainerButton">Add Team</button></a>
-<a class="trainerLinks" href='/trainers/{{trainer._id}}/edit'><button class="trainerButton">Edit Trainer</button></a>
-<a class="trainerLinks" href='/trainers'><button class="trainerButton">All Trainers</button></a>
-<form action='/trainers/{{trainer._id}}?_method=DELETE' method='POST'>
-    <input type='submit' value='Delete Trainer'>
-</form>
+    <a class="trainerLinks" href='/trainers/{{trainer._id}}/teams/new'><button class="trainerButton">Add Team</button></a>
+    <a class="trainerLinks" href='/trainers/{{trainer._id}}/edit'><button class="trainerButton">Edit Trainer</button></a>
+    <a class="trainerLinks" href='/trainers'><button class="trainerButton">All Trainers</button></a>
+    <form action='/trainers/{{trainer._id}}?_method=DELETE' method='POST'>
+        <input type='submit' value='Delete Trainer'>
+    </form>
 </div>

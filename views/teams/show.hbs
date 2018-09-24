@@ -1,22 +1,15 @@
-<div class="pokemonRowBackdrop"><img src='https://i.imgur.com/R6458d9.png'/></div>
+<div class="pokemonRowBackdrop"><img src='https://i.imgur.com/R6458d9.png' /></div>
 <div><img class="teamIcon" src="{{team.imgUrl}}"></div>
-
-<div class= "pokemonRow">
+<div class="pokemonRow">
     {{#each pokemon}}
-        <a href='/trainers/{{../trainer._id}}/teams/{{../team._id}}/pokemon/{{_id}}'><img class="pokemonPics" src="{{imgUrl}}"></a>
+    <a href='/trainers/{{../trainer._id}}/teams/{{../team._id}}/pokemon/{{_id}}'><img class="pokemonPics" src="{{imgUrl}}"></a>
     {{/each}}
 </div>
-
-
 <h1 class='teamName'>{{team.name}}</h1>
-
 <h2 class='teamStyle'>Style: {{team.style}}</h2>
-
-
 <form class='teamDelete' action='/trainers/{{trainer._id}}/teams/{{team._id}}?_method=DELETE' method='POST'>
     <input type='submit' value='Delete Team'>
 </form>
-
 <a class="teamEdit" href='/trainers/{{trainer._id}}/teams/{{team._id}}/edit'><button>Edit Team</button></a>
 <a class="teamNavigate" href='/trainers/{{trainer._id}}/teams'><button>Change Teams</button></a>
 <a class="pokemonNew" href='/trainers/{{trainer._id}}/teams/{{team._id}}/pokemon/new'><button>Add Pokemon</button></a><br>

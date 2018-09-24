@@ -1,28 +1,19 @@
-
-
-
-
-<img class="pokedex" src='https://i.imgur.com/GdSQK1g.png'/>
-
+<img class="pokedex" src='https://i.imgur.com/GdSQK1g.png' />
 <h3 class="pokeName">{{pokemon.name}} | dex#: {{pokemon.dexNumber}}</h3>
-
 <div><img class="dexMon" src="{{pokemon.imgUrl}}"></div>
-
-<div><img class="dexType" src="{{pokemon.type}}"/></div>
-<div class="dexMoves">Moves: 
+<div><img class="dexType" src="{{pokemon.type}}" /></div>
+<div class="dexMoves">Moves:
     <ul>
-    <li>{{pokemon.moveOne}}</li>
-    <li>{{pokemon.moveTwo}}</li>
-    <li>{{pokemon.moveThree}}</li>
-    <li>{{pokemon.moveFour}}</li>
+        <li>{{pokemon.moveOne}}</li>
+        <li>{{pokemon.moveTwo}}</li>
+        <li>{{pokemon.moveThree}}</li>
+        <li>{{pokemon.moveFour}}</li>
     </ul>
-    </div>
-<div class="dexNavigate">
-<form action='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/{{pokemon._id}}?_method=DELETE' method='POST'>
-    <input type='submit' value='Delete Pokemon'>
-</form>
-<a href='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/{{pokemon._id}}edit'>Edit Pokemon</a>
-<a href='/trainers/{{trainerId}}/teams/{{teamId}}'>Go Back to Pokemon</a>
 </div>
-
-
+<div class="dexNavigate">
+    <form action='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/{{pokemon._id}}?_method=DELETE' method='POST'>
+        <input type='submit' value='Delete Pokemon'>
+    </form>
+    <a href='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/{{pokemon._id}}edit'>Edit Pokemon</a>
+    <a href='/trainers/{{trainerId}}/teams/{{teamId}}'>Go Back to Pokemon</a>
+</div>

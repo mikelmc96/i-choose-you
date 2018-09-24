@@ -1,11 +1,19 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/project-two', { useNewUrlParser: true })
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/project-two', {
+    useNewUrlParser: true
+})
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true
+})
 
 const Schema = require('./schema')
 
-const { Trainer, Team, Pokemon } = Schema
+const {
+    Trainer,
+    Team,
+    Pokemon
+} = Schema
 
 //Trying to build a class with Constructor for Pokemon
 
@@ -23,8 +31,6 @@ const { Trainer, Team, Pokemon } = Schema
 // }
 
 // const raichu = new newPokemon('https://i.imgur.com/OF31bIR.png', 'Raichu', 26, 'https://i.imgur.com/pZtQPZG.png?1', 'Thunder', 'Body Slam', 'Volt Tackle', 'Charge')
-
-
 
 //Red's Kanto Pokemon
 

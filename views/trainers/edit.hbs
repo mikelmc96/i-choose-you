@@ -1,21 +1,21 @@
 <div class="createForm">
-<form action='/trainers/{{trainer._id}}?_method=PUT' method='POST'>
-    <h1>Edit Trainer</h1><br>
-    TrainerID:<br>
-    <input type='text' name='name' value='{{trainer.name}}'><br>
-    Region:<br>
-    <input type='text' name='region' value='{{trainer.region}}'><br>
-    Hometown:<br>
-    <input type='text' name='hometown' value='{{trainer.hometown}}'><br>
-    Age:<br>
-    <input type='text' name='age' value='{{trainer.age}}'><br>
-    Gender:<br>
-    <input type='text' name='gender' value='{{trainer.gender}}'><br>
-    Image Url:<br>
-    <input type='text' name='imgUrl' value='{{trainer.imgUrl}}'><br><br>
-    <div><input type='submit' value='Update Trainer'></div>
+    <form action='/trainers/{{trainer._id}}?_method=PUT' method='POST'>
+        <h1>Edit Trainer</h1><br>
+        TrainerID:<br>
+        <input type='text' name='name' value='{{trainer.name}}'><br>
+        Region:<br>
+        <input type='text' name='region' value='{{trainer.region}}'><br>
+        Hometown:<br>
+        <input type='text' name='hometown' value='{{trainer.hometown}}'><br>
+        Age:<br>
+        <input type='text' name='age' value='{{trainer.age}}'><br>
+        Gender:<br>
+        <input type='text' name='gender' value='{{trainer.gender}}'><br>
+        Image Url:<br>
+        <input type='text' name='imgUrl' value='{{trainer.imgUrl}}'><br><br>
+        <div><input type='submit' value='Update Trainer'></div>
 
-    <div><img class="trainerEdit" src="{{trainer.imgUrl}}"/></div>
-    <div><img class="smeargle" src="https://i.imgur.com/LFCuVIO.png"/></div>
-</form>
+        <div><img class="trainerEdit" src="{{trainer.imgUrl}}" /></div>
+        <div><img class="smeargle" src="https://i.imgur.com/LFCuVIO.png" /></div>
+    </form>
 </div>
