@@ -85,14 +85,14 @@ a {
 
 .championTeam {
   position: absolute;
-  top: 628px;
-  right: 465px;
+  top: 428px;
+  right: 295px;
 }
 
 .trainerForm {
   position: absolute;
-  top: 670px;
-  right: 485px;
+  top: 470px;
+  right: 320px;
 }
 
 .slotOne {
@@ -185,10 +185,10 @@ a {
   height: 200px;
 }
 
-.oak {
+.oakPic {
   position: absolute;
-  left: 800px;
-  bottom: 5px;
+  left: 500px;
+  top: -70px;
 }
 
 .ruby {
@@ -211,10 +211,10 @@ a {
   width: 600px;
 }
 
-.dragonite {
+.dragonitePic {
   position: absolute;
-  left: 100px;
-  bottom: 5px;
+  left: -150px;
+  top: 100px;
   transform: scaleX(-1);
   filter: 'FlipH';
   -ms-filter: "FlipH"
@@ -306,27 +306,27 @@ a {
 .dexMon {
   height: 250px;
   position: absolute;
-  top: 155px;
-  right: 505px;
+  top: 35px;
+  right: 325px;
 }
 
 .dexType {
   position: absolute;
-  top: 520px;
-  left: 500px;
+  top: 380px;
+  left: 300px;
 }
 
 .dexMoves {
   text-align: left;
   position: absolute;
-  top: 520px;
-  left: 620px;
+  top: 380px;
+  left: 420px;
 }
 
 .dexNavigate {
   position: absolute;
-  top: 680px;
-  left: 550px;
+  top: 550px;
+  left: 350px;
 }
 
 .trainerButton {
@@ -367,11 +367,11 @@ a {
 
 .pokeName {
   position: absolute;
-  top: 630px;
-  left: 590px;
+  top: 490px;
+  left: 390px;
 }
 
-.pokedex {
+.positionPokedex {
   position: absolute;
   top: 140px;
   right: 180px;
@@ -631,4 +631,48 @@ a {
 
 .logoPic {
   width: 500px;
+}
+
+@media (max-width: 500px) {
+
+  body {
+    background-size: 400px;
+  }
+  .logoPic {
+    position: absolute;
+    left: -325px;
+    width: 250px;
+  }
+  .homeButton {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    width: 15px;
+    height: 15px;
+  }
+  .allTrainers {
+    position: absolute;
+    left: 90px;
+    width: 200px;
+  }
+  .trainerEach {
+    height: 300px;
+  }
+  .createForm {
+    position: absolute;
+    left: 90px;
+    width: 200px;
+  }
+  .dragonitePic {
+    position: absolute;
+    left: -95px;
+    top: 200px;
+    height: 150px;
+  }
+  .oakPic {
+    position: absolute;
+    left: 185px;
+    height: 180px;
+    top: 200px;
+  }
 }

@@ -1,35 +1,33 @@
-<div class="positionLogo">
+
+  <div class="positionLogo">
     <img class="logoPic" src="https://i.imgur.com/NDYcSJP.png">
-    <a href="/trainers"><img class="homeButton" src="https://i.imgur.com/5dicAEq.png"/></a>
-</div>
-
-<div class="createForm">
-  <h3>Welcome to 'I Choose You'.</h3>
-  <h3>Start your adventure by siging up.</h3>
-  <div>
-    <form action='/trainers/{{trainer._id}}' method='POST'>
-      TrainerID:<br>
-      <input type="text" name="name"><br>
-      Region:<br>
-      <input type="text" name="region"><br>
-      Hometown:<br>
-      <input type="text" name="hometown"><br>
-      Age:<br>
-      <input type="text" name="age"><br>
-      Gender:<br>
-      <input type="text" name="gender"><br>
-      Image URL:<br>
-      <input type="text" name="imgUrl"><br>
-      <input type="submit" value="Let's Go!">
-    </form>
+    <a href="/trainers"><img class="homeButton" src="https://i.imgur.com/5dicAEq.png" /></a>
   </div>
-  <p>Already have an account? <a href='/trainers'>Log in</a></p>
-</div>
-<div class="oak">
-  <img src="https://i.imgur.com/UiGxSeP.png" />
-</div>
-<div class="dragonite">
-  <img src="https://i.imgur.com/XWS4whL.png" />
-</div>
 
-</div>
+  <div class="createForm">
+    <h3>Welcome to 'I Choose You'.</h3>
+    <h3>Start your adventure by siging up.</h3>
+    <div>
+      <form action='/trainers/{{trainer._id}}' method='POST'>
+        TrainerID:<br>
+        <input type="text" name="name"><br>
+        Region:<br>
+        <input type="text" name="region"><br>
+        Hometown:<br>
+        <input type="text" name="hometown"><br>
+        Age:<br>
+        <input type="text" name="age"><br>
+        Gender:<br>
+        <input type="text" name="gender"><br>
+        Image URL:<br>
+        <input type="text" name="imgUrl"><br>
+        <input type="submit" value="Let's Go!">
+      </form>
+      <img class="oakPic" src="https://i.imgur.com/UiGxSeP.png" />
+      <img class="dragonitePic" src="https://i.imgur.com/XWS4whL.png" />
+    </div>
+    <p>Already have an account? <a href='/trainers'>Log in</a></p>
+
+  </div>
+
+
