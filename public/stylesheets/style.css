@@ -633,47 +633,47 @@ a {
   width: 500px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
 
   body {
     background-size: 1400px;
   }
   .logoPic {
     position: absolute;
-    left: -285px;
-    width: 750px;
+    left: -335px;
+    width: 250px;
   }
   .homeButton {
     position: absolute;
-    top: 90px;
-    left: 460px;
-    width: 55px;
-    height: 55px;
+    top: 35px;
+    left: -85px;
+    width: 15px;
+    height: 15px;
   }
   .allTrainers {
     position: absolute;
     left: 90px;
-    width: 200px;
+    width: 800px;
   }
   .trainerEach {
     height: 300px;
   }
   .createForm {
     position: absolute;
-    top: 250px;
-    left: 140px;
-    width: 700px;
+    top: 140px;
+    left: 25px;
+    width: 300px;
   }
   .dragonitePic {
     position: absolute;
-    left: 25px;
+    left: -40px;
     top: 150px;
-    height: 250px;
+    height: 150px;
   }
   .oakPic {
     position: absolute;
-    left: 485px;
-    height: 280px;
+    left: 235px;
+    height: 180px;
     top: 130px;
   }
 }
