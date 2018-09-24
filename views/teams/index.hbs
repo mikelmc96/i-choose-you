@@ -1,8 +1,12 @@
-<br><br><br><br>
-<h1>All Teams</h1> <a href='/trainers/{{trainerId}}/teams/new'>( new )</a>
+
+<div class="teamsDisplayed">
+    <h1>All Teams</h1> 
+    <h3>Welcome to your Teams Page.  Here you can select a team below or create a <a href='/trainers/{{trainerId}}/teams/new'>new</a> one!  Think carefully when creating a new team, or editing an existing one.  Your team will need to be well-balanced.  An all offensive team can produce a multitude of vulnerabilities, while an exclusivley defensive team might not have the strength necessary for battle.</h3>
 
 <div>
     {{#each teams}}
-        <div><a href='/trainers/{{../trainerId}}/teams/{{this._id}}'><img class="allTeams" src="{{this.imgUrl}}"></a></div>
+        <a href='/trainers/{{../trainerId}}/teams/{{this._id}}'><img class="allTeams" src="{{this.imgUrl}}"></a>
     {{/each}}
+</div>
+
 </div>
