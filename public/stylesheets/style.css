@@ -633,22 +633,22 @@ a {
   width: 500px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1000px) {
 
   body {
-    background-size: 400px;
+    background-size: 1400px;
   }
   .logoPic {
     position: absolute;
-    left: -325px;
-    width: 250px;
+    left: -285px;
+    width: 750px;
   }
   .homeButton {
     position: absolute;
-    top: 30px;
-    left: -60px;
-    width: 15px;
-    height: 15px;
+    top: 90px;
+    left: 460px;
+    width: 55px;
+    height: 55px;
   }
   .allTrainers {
     position: absolute;
@@ -660,18 +660,18 @@ a {
   }
   .createForm {
     position: absolute;
-    left: 90px;
-    width: 200px;
+    left: 150px;
+    width: 700px;
   }
   .dragonitePic {
     position: absolute;
-    left: -95px;
+    left: 95px;
     top: 200px;
     height: 150px;
   }
   .oakPic {
     position: absolute;
-    left: 185px;
+    left: 485px;
     height: 180px;
     top: 200px;
   }
