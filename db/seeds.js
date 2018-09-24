@@ -15,23 +15,6 @@ const {
     Pokemon
 } = Schema
 
-//Trying to build a class with Constructor for Pokemon
-
-// class newPokemon {
-//     constructor(imgUrl, name, dexNumber, type, moveOne, moveTwo, moveThree, moveFour) {
-//         this.imgUrl = this.imgUrl
-//         this.name = this.name
-//         this.dexNumber = this.dexNumber
-//         this.type = this.type
-//         this.moveOne = this.moveOne
-//         this.moveTwo = this.moveTwo
-//         this.moveThree = this.moveThree
-//         this.moveFour = this.moveFour
-//     } 
-// }
-
-// const raichu = new newPokemon('https://i.imgur.com/OF31bIR.png', 'Raichu', 26, 'https://i.imgur.com/pZtQPZG.png?1', 'Thunder', 'Body Slam', 'Volt Tackle', 'Charge')
-
 //Red's Kanto Pokemon
 
 const pidgeot = new Pokemon({

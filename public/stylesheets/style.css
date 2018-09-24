@@ -3,6 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url('https://i.imgur.com/ZzJFkzk.jpg');
   text-align: center;
+  font-family: 'Acme', sans-serif;
 }
 
 a {
@@ -169,6 +170,10 @@ a {
   padding-right: 20px;
 }
 
+.pokemonPics:hover {
+  opacity: 0.6;
+}
+
 .pokemonRow {
   position: absolute;
   top: 225px;
@@ -320,7 +325,7 @@ a {
 .dexNavigate {
   position: absolute;
   top: 680px;
-  left: 520px;
+  left: 550px;
 }
 
 .trainerButton {
@@ -329,7 +334,7 @@ a {
 
 .rubyDialogue {
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 90px;
   max-width: 230px;
 }
@@ -348,6 +353,7 @@ a {
   display: flex;
   justify-content: center;
   border-radius: 25px;
+  border: solid 3px white;
   padding: 25px;
   margin-top: 150px;
   background-color: #1a1a1a;
@@ -361,7 +367,7 @@ a {
 .pokeName {
   position: absolute;
   top: 630px;
-  left: 560px;
+  left: 590px;
 }
 
 .pokedex {
@@ -405,6 +411,10 @@ a {
 .trainers {
   margin-top: 50px;
   text-align: center;
+}
+
+.trainerEach:hover {
+  opacity: 0.5;
 }
 
 .allTrainers {
@@ -596,4 +606,11 @@ a {
   position: absolute;
   top: 350px;
   left: 888px;
+}
+
+.homeButton {
+  position: absolute;
+  top: 90px;
+  right: 320px;
+  height: 30px;
 }

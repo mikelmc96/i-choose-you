@@ -2,10 +2,10 @@
     <h1>All Trainers</h1>
     <h3>Welcome to the Trainer's Page! Select a Trainer below or add a <a href='/trainers/new'>new</a> one! Your
         trainer's name, region they hail from, hometown and more can be customized. Simply open the trainer card of the
-        trainer you would like to customize and select Edit Trainer.</h3>
+        trainer you would like to customize and select Edit Trainer.  If you ever feel lost, click on the pokeball at the top of the page to return to this Trainers page.</h3>
     <div class="trainers">
         {{#each trainers}}
-        <a href='/trainers/{{this._id}}'><img src="{{this.imgUrl}}"></a>
+        <a href='/trainers/{{this._id}}'><img class="trainerEach" src="{{this.imgUrl}}"></a>
         {{/each}}
     </div>
 </div>
