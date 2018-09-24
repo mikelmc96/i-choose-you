@@ -652,6 +652,7 @@ a {
   }
   .allTrainers {
     position: absolute;
+    top: 140px;
     left: 40px;
     width: 300px;
   }
