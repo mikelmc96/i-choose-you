@@ -633,7 +633,7 @@ a {
   width: 500px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 800px) {
 
   body {
     background-size: 400px;
