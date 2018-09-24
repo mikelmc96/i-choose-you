@@ -205,7 +205,7 @@ a {
 
 .logo {
   position: absolute;
-  bottom: 560px;
+  top: 25px;
   right: 350px;
   width: 600px;
 }
@@ -613,4 +613,11 @@ a {
   top: 90px;
   right: 320px;
   height: 30px;
+}
+
+.editPokePic {
+  position: absolute;
+  top: 350px;
+  right: 250px;
+  height: 300px;
 }

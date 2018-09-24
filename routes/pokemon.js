@@ -46,6 +46,17 @@ router.get('/:id', (req, res) => {
     })
 })
 
+//Edit
+
+router.get('/:id/edit', (req, res) => {
+    Trainer.findById(req.params.trainerId)
+    .then((trainer) => {
+        const team = trainer.teams.id(req.params.teamId)
+        const pokemon = team.pokemon.id(req.params.id)
+      res.render('pokemon/edit', {trainer,team, pokemon})
+    })
+  })
+
 //Create
 
 router.post('/', (req, res) => {
