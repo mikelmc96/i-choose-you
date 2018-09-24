@@ -509,7 +509,7 @@ a {
 
 .fire {
   position: absolute;
-  top: 140px;
+  top: 155px;
   left: 388px;
 }
 
@@ -521,7 +521,7 @@ a {
 
 .psychic {
   position: absolute;
-  top: 140px;
+  top: 155px;
   left: 588px;
 }
 
@@ -533,7 +533,7 @@ a {
 
 .flying {
   position: absolute;
-  top: 140px;
+  top: 155px;
   left: 788px;
 }
 
@@ -545,7 +545,7 @@ a {
 
 .ghost {
   position: absolute;
-  top: 455px;
+  top: 470px;
   left: 288px;
 }
 
@@ -557,7 +557,7 @@ a {
 
 .ice {
   position: absolute;
-  top: 455px;
+  top: 470px;
   left: 488px;
 }
 
@@ -569,7 +569,7 @@ a {
 
 .poison {
   position: absolute;
-  top: 455px;
+  top: 470px;
   left: 688px;
 }
 
@@ -581,32 +581,32 @@ a {
 
 .fairy {
   position: absolute;
-  top: 455px;
+  top: 470px;
   left: 888px;
 }
 
 .ground {
   position: absolute;
   top: 250px;
-  left: 288px;
+  left: 255px;
 }
 
 .bug {
   position: absolute;
-  top: 350px;
-  left: 288px;
+  top: 360px;
+  left: 255px;
 }
 
 .fighting {
   position: absolute;
   top: 250px;
-  left: 888px;
+  left: 920px;
 }
 
 .dark {
   position: absolute;
-  top: 350px;
-  left: 888px;
+  top: 360px;
+  left: 920px;
 }
 
 .homeButton {
