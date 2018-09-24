@@ -640,13 +640,13 @@ a {
   }
   .logoPic {
     position: absolute;
-    left: -335px;
+    left: -325px;
     width: 250px;
   }
   .homeButton {
     position: absolute;
     top: 35px;
-    left: -85px;
+    left: -75px;
     width: 15px;
     height: 15px;
   }
@@ -661,7 +661,7 @@ a {
   .createForm {
     position: absolute;
     top: 140px;
-    left: 25px;
+    left: 40px;
     width: 300px;
   }
   .dragonitePic {
