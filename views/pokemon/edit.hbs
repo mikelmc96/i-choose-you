@@ -4,7 +4,7 @@
 </div>
 
 <div class="createForm">
-    <form action='/trainers/{{trainerId}}/teams/{{teamId}}/pokemon/{{pokemon._id}}' method='POST'>
+    <form action='/trainers/{{trainer._id}}/teams/{{team._id}}/pokemon/{{pokemon._id}}?_method=PUT' method='POST'>
         <h1>Edit Pokemon</h1><br>
         Name:<br>
         <input type='text' name='name' value="{{pokemon.name}}"><br>
@@ -22,7 +22,7 @@
         <input type='text' name='dexNumber' value="{{pokemon.dexNumber}}"><br>
         Image Url:<br>
         <input type="text" name="imgUrl" value="{{pokemon.imgUrl}}"><br><br>
-        <div><input type='submit' value='Edit Pokemon'></div>
+        <div><input type='submit' value='Don\'t Edit Pokemon'></div>
     </form>
 </div>
 

@@ -72,6 +72,29 @@ router.post('/', (req, res) => {
         })
 })
 
+//Update
+
+router.put('/:pokemonId', (req, res) => {
+    Trainer.findById(req.params.trainerId)
+    .then((trainer) => {
+            const team = trainer.teams.id(req.params.teamId)
+            const newPokemon = team.pokemon.id(req.params.pokemonId)
+            // newPokemon.name = req.body.name
+            // newPokemon.type = req.body.type
+            // newPokemon.moveOne = req.body.moveOne
+            // newPokemon.moveTwo = req.body.moveTwo
+            // newPokemon.moveThree = req.body.moveThree
+            // newPokemon.moveFour = req.body.moveFour
+            // newPokemon.dexNumber = req.body.dexNumber
+            // newPokemon.imageUrl = req.body.imageUrl
+                newPokemon.set(req.body)
+            return trainer.save()
+        })
+    .then((trainer) => {
+      res.redirect(`/trainers/${req.params.trainerId}/teams/${req.params.teamId}/pokemon/${req.params.pokemonId}`)
+    })
+  })
+
 //delete
 
 router.delete('/:id', (req, res) => {
