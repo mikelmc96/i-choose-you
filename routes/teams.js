@@ -75,9 +75,6 @@ router.put('/:teamId', (req, res) => {
     Trainer.findById(req.params.trainerId)
     .then((trainer) => {
             const newTeam = trainer.teams.id(req.params.teamId)
-            // newTeam.name = req.body.name
-            // newTeam.style = req.body.style
-            // newTeam.imageUrl = req.body.imageUrl
             newTeam.set(req.body)
             return trainer.save()
         })
