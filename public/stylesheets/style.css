@@ -655,7 +655,6 @@ a {
     top: 140px;
     left: 40px;
     width: 300px;
-    margin-bottom: 20px;
   }
   .trainerEach {
     height: 200px;
@@ -787,5 +786,12 @@ a {
     height: 300px;
     top: 70px;
     left: 230px;
+  }
+  .elementsIcons {
+    display: none;
+  }
+  .teamsDisplayed {
+    top: 120px;
+    left: 40px;
   }
 }
