@@ -845,4 +845,23 @@ a {
     left: 5px;
     font-size: 8px;
   }
+  .pikachu {
+    display: none;
+  }
+  .pikachuDialogue {
+    display: none;
+  }
+  .starters {
+    display: none;
+  }
+  .pikachuBubble {
+    display: none;
+  }
+  .pokemonRow {
+    top: 200px;
+    left: 125px;
+  }
+  .pokemonPics {
+    height: 50px;
+  }
 }
