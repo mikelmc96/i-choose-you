@@ -862,6 +862,31 @@ a {
     left: 125px;
   }
   .pokemonPics {
-    height: 50px;
+    display: none;
+  }
+  .pokedex {
+    position: absolute;
+    left: -140px;
+    width: 300px;
+    height: auto;
+  }
+  .dexMon {
+    height: 5px;
+  }
+  .dexType {
+    top: 130px;
+    left: -35px;
+    height: 30px;
+  }
+  .dexMoves {
+    top: 130px;
+    left: 1px;
+    font-size: 5px;
+  }
+  .pokedexEdit {
+    position: absolute;
+    top: 50px;
+    left: 805px;
+    font-size: 8px;
   }
 }
