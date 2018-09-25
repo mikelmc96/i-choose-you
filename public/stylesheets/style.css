@@ -798,12 +798,12 @@ a {
     display: none;
   }
   .teamCard {
-    left: 1px;
+    left: 3px;
     width: 400px;
     height: auto;
   }
   .pokemonRowBackdrop {
-    left: 1px;
+    left: 3px;
     width: 400px;
     height: auto;
     background-size: 300px;
