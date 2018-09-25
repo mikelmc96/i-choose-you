@@ -6,13 +6,19 @@
 
 I Choose You is a Pokemon Team-Building Application for your desktop or mobile device.  You will be given the chance to create and customize a trainer.  Give that trainer a multitude of teams to build and change.  And finally, the ability to add Pokemon to those teams, all the while changing their movesets and abilities at will.
 
-Start your adeventure [here](https://thawing-temple-86373.herokuapp.com/), via Heroku.
+* Start your adeventure [here](https://thawing-temple-86373.herokuapp.com/), via Heroku.
 
-View this project [here](https://github.com/taylorosbourne/i-choose-you), on Github
+* View this project [here](https://github.com/taylorosbourne/i-choose-you), on Github
 
-Review the work process [here](https://trello.com/b/xTTa8gjU), with Trello
+* Review the work process [here](https://trello.com/b/xTTa8gjU), with Trello
 
-This application was built with Nodejs, Express, MongoDB, Mongoose, Handlebars and CSS.
+This application was built with: 
+* Nodejs 
+* Express 
+* MongoDB 
+* Mongoose  
+* Handlebars
+* CSS.
 
 ERD
 
@@ -25,3 +31,5 @@ Wireframes
 ![alt text](https://i.imgur.com/pcYtMDE.jpg)
 
 ![alt text](https://i.imgur.com/URq6tlL.jpg)
+
+Special thanks to Bulbapedia, Stack Overflow, Mozilla Docs, Mongoose Docs and Daniel and Andrew.  As well as, the rest of WDI 17.
