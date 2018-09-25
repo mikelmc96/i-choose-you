@@ -782,4 +782,9 @@ a {
     width: 50px;
     font-size: 8px;
   }
+  .trainerEdit {
+    height: 300px;
+    top: 70px;
+    left: 230px;
+  }
 }
